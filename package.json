@@ -1,0 +1,31 @@
+{
+  "name": "openapi-proxy",
+  "version": "1.0.0",
+  "description": "API代理服务器，支持OpenAI和Anthropic等平台的API代理",
+  "main": "app/server.js",
+  "scripts": {
+    "start": "node app/server.js",
+    "dev": "nodemon app/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "proxy",
+    "api",
+    "openai",
+    "anthropic",
+    "express",
+    "nodejs"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "http-proxy-middleware": "^2.0.6"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+} 
