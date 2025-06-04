@@ -4,8 +4,13 @@
   "description": "API代理服务器，支持OpenAI和Anthropic等平台的API代理",
   "main": "app/server.js",
   "scripts": {
-    "start": "node app/server.js",
-    "dev": "nodemon app/server.js",
+    "start": "node scripts/start.js",
+    "dev": "nodemon",
+    "pm2:start": "pm2 start ecosystem.config.js",
+    "pm2:stop": "pm2 stop ecosystem.config.js",
+    "pm2:restart": "pm2 restart ecosystem.config.js",
+    "docker:build": "docker build -t openapi-proxy .",
+    "docker:run": "docker run -p 3000:3000 openapi-proxy",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -14,7 +19,10 @@
     "openai",
     "anthropic",
     "express",
-    "nodejs"
+    "nodejs",
+    "middleware",
+    "cors",
+    "typescript"
   ],
   "author": "",
   "license": "MIT",
@@ -26,6 +34,7 @@
     "nodemon": "^3.0.1"
   },
   "engines": {
-    "node": ">=14.0.0"
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
   }
 } 

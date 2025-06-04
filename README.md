@@ -1,5 +1,9 @@
 # OpenAPI Proxy
 
+![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
+![Express.js](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+
 一个基于 Node.js 和 Express 的 API 代理服务器，支持多个 AI 平台的 API 代理转发。
 
 ## 功能特性
